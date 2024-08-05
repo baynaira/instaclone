@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'homework/style.css' %}">
+</head>
+<body>
+    <div class="container">
+        <h1>Hello, Welcome to the Second Page!</h1>
+        <p>Welcome, {{ username }}!</p>
+    </div>
+    <p><a href="{% url 'login' %}">Logout</a></p>
+</body>
+</html>
